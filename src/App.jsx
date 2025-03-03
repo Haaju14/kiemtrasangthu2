@@ -35,7 +35,7 @@ const App = () => (
         },
       ]}
     >
-      <Input id="txtUserName" />
+      <Input id="textboxusername" />
     </Form.Item>
 
     <Form.Item
@@ -48,7 +48,7 @@ const App = () => (
         },
       ]}
     >
-      <Input id='txtMatKhau' />
+      <Input id='textboxmatkhau' />
     </Form.Item>
 
 
