@@ -38,7 +38,18 @@ const App = () => (
       <Input id="txtUserName" />
     </Form.Item>
 
-
+    <Form.Item
+      label="MatKhau"
+      name="matkhau"
+      rules={[
+        {
+          required: true,
+          message: 'Please input your password!',
+        },
+      ]}
+    >
+      <Input id='txtMatKhau' />
+    </Form.Item>
 
 
     <Form.Item name="remember" valuePropName="checked" label={null}>
