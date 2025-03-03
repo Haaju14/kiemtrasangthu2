@@ -57,8 +57,8 @@ const App = () => (
     </Form.Item>
 
     <Form.Item label={null}>
-      <Button type="primary" htmlType="submit" id='btnlogin'>
-        Login
+      <Button type="primary" htmlType="submit" id='btndangnhap'>
+        Đăng Nhập
       </Button>
     </Form.Item>
   </Form>
