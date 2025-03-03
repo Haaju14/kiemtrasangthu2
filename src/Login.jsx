@@ -26,11 +26,11 @@ const App = () => {
       </Form.Item>
 
       <Form.Item
-        label="Mật khẩu"
+        label="PassWord"
         name="password"
         rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
       >
-        <Input.Password id = "txtmatkhau"/>
+        <Input.Password id = "txtpassword"/>
       </Form.Item>
 
       <Form.Item name="remember" valuePropName="checked" label={null}>
@@ -38,8 +38,8 @@ const App = () => {
       </Form.Item>
 
       <Form.Item label={null}>
-        <Button type="primary" htmlType="submit" >
-          submit
+        <Button type="primary" htmlType="submit" id = "btnlogin">
+          Login
         </Button>
       </Form.Item>
     </Form>
