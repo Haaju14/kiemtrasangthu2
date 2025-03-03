@@ -26,8 +26,8 @@ const App = () => (
     autoComplete="off"
   >
     <Form.Item
-      label="Username"
-      name="username"
+      label="TenDangNhap"
+      name="tendangnhap"
       rules={[
         {
           required: true,
@@ -57,7 +57,7 @@ const App = () => (
     </Form.Item>
 
     <Form.Item label={null}>
-      <Button type="primary" htmlType="submit">
+      <Button type="primary" htmlType="submit" id='btnlogin'>
         Submit
       </Button>
     </Form.Item>
