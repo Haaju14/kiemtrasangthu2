@@ -18,7 +18,7 @@ const App = () => {
       id='controller'
     >
       <Form.Item
-        label="UserName"
+        label="Tên đăng nhập"
         name="username" 
         rules={[{ required: true, message: 'Vui lòng nhập tên đăng nhập!' }]}
       >
