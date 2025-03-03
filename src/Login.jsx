@@ -22,7 +22,7 @@ const App = () => {
         name="username" 
         rules={[{ required: true, message: 'Vui lòng nhập tên đăng nhập!' }]}
       >
-        <Input />
+        <Input id = "txtUserName" />
       </Form.Item>
 
       <Form.Item
