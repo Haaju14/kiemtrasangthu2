@@ -39,8 +39,8 @@ const App = () => (
     </Form.Item>
 
     <Form.Item
-      label="MatKhau"
-      name="matkhau"
+      label="PassWord"
+      name="password"
       rules={[
         {
           required: true,
@@ -48,7 +48,7 @@ const App = () => (
         },
       ]}
     >
-      <Input id='txtMatKhau' />
+      <Input id='txtPassWord' />
     </Form.Item>
 
 
@@ -57,8 +57,8 @@ const App = () => (
     </Form.Item>
 
     <Form.Item label={null}>
-      <Button type="primary" htmlType="submit">
-        Submit
+      <Button type="primary" htmlType="submit" id='btnlogin'>
+        Login
       </Button>
     </Form.Item>
   </Form>
