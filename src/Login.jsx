@@ -1,25 +1,9 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input, message } from 'antd';
-import { useNavigate } from 'react-router-dom';
 
 const App = () => {
-  const navigate = useNavigate();
 
-  // const onFinish = (values) => {
-  //   const { username, password } = values;
-  //   if (username === 'admin' && password === 'admin') {
-  //     message.success('Đăng nhập thành công!');
-  //     console.log("🔄 Đang chuyển hướng đến /success");
-  //     navigate('/success');
-  //   } else {
-  //     message.error('Sai tài khoản hoặc mật khẩu!');
-  //   }
-  // };
   
-
-  // const onFinishFailed = (errorInfo) => {
-  //   console.log('Failed:', errorInfo);
-  // };
 
   return (
     <Form
@@ -34,11 +18,11 @@ const App = () => {
       id='controller'
     >
       <Form.Item
-        label="Tên đăng nhập"
+        label="UserName"
         name="username" 
         rules={[{ required: true, message: 'Vui lòng nhập tên đăng nhập!' }]}
       >
-        <Input id="textboxusername" />
+        <Input />
       </Form.Item>
 
       <Form.Item
@@ -46,7 +30,7 @@ const App = () => {
         name="password"
         rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
       >
-        <Input.Password id="textboxmatkhau" />
+        <Input.Password />
       </Form.Item>
 
       <Form.Item name="remember" valuePropName="checked" label={null}>
@@ -54,8 +38,8 @@ const App = () => {
       </Form.Item>
 
       <Form.Item label={null}>
-        <Button type="primary" htmlType="submit" id="btndangnhap">
-          Đăng Nhập
+        <Button type="primary" htmlType="submit" >
+          submit
         </Button>
       </Form.Item>
     </Form>
