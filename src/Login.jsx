@@ -30,7 +30,7 @@ const App = () => {
         name="password"
         rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
       >
-        <Input.Password />
+        <Input.Password id = "txtmatkhau"/>
       </Form.Item>
 
       <Form.Item name="remember" valuePropName="checked" label={null}>
