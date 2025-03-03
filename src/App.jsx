@@ -1,66 +1,14 @@
 import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
-const onFinish = (values) => {
-  console.log('Success:', values);
+import Login from './Login';
+import Success from './success';
+import { Routes, Route } from 'react-router-dom';
+
+const App = () => {
+  return (
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/success" element={<Success />} />
+      </Routes>
+  );
 };
-const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
-};
-const App = () => (
-  <Form
-    name="basic"
-    labelCol={{
-      span: 8,
-    }}
-    wrapperCol={{
-      span: 16,
-    }}
-    style={{
-      maxWidth: 600,
-    }}
-    initialValues={{
-      remember: true,
-    }}
-    onFinish={onFinish}
-    onFinishFailed={onFinishFailed}
-    autoComplete="off"
-  >
-    <Form.Item
-      label="TenDangNhap"
-      name="Tên đăng nhập"
-      rules={[
-        {
-          required: true,
-          message: 'Please input your username!',
-        },
-      ]}
-    >
-      <Input id="txtUserName" />
-    </Form.Item>
-
-    <Form.Item
-      label="PassWord"
-      name="password"
-      rules={[
-        {
-          required: true,
-          message: 'Please input your password!',
-        },
-      ]}
-    >
-      <Input id='txtPassWord' />
-    </Form.Item>
-
-
-    <Form.Item name="remember" valuePropName="checked" label={null}>
-      <Checkbox>Remember me</Checkbox>
-    </Form.Item>
-
-    <Form.Item label={null}>
-      <Button type="primary" htmlType="submit" id='btnlogin'>
-        Login
-      </Button>
-    </Form.Item>
-  </Form>
-);
 export default App;
